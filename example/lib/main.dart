@@ -55,6 +55,7 @@ class PhoneFieldView extends StatelessWidget {
           shouldFormat: shouldFormat && !useRtl,
           autofocus: true,
           autofillHints: const [AutofillHints.telephoneNumber],
+          codeChipPadding: const EdgeInsets.only(right: 8),
           countrySelectorNavigator: selectorNavigator,
           defaultCountry: IsoCode.US,
           decoration: InputDecoration(
