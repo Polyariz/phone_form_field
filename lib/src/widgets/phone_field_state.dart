@@ -122,7 +122,7 @@ class PhoneFieldState extends State<PhoneField> {
             child: Padding(
               padding: !widget.showDialCode && !widget.showFlagInInput
                   ? EdgeInsets.zero
-                  : const EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                  : widget.codeChipPadding ?? const EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
               child: CountryCodeChip(
                 key: const ValueKey('country-code-chip'),
                 isoCode: controller.isoCode,
