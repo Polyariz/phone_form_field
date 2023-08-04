@@ -31,6 +31,7 @@ class PhoneField extends StatefulWidget {
   final TextInputAction? textInputAction;
   final TextStyle? style;
   final TextStyle? countryCodeStyle;
+  final EdgeInsets? codeChipPadding;
   final StrutStyle? strutStyle;
   final TextAlign textAlign;
   final TextAlignVertical? textAlignVertical;
@@ -82,6 +83,7 @@ class PhoneField extends StatefulWidget {
     required this.textInputAction,
     required this.style,
     required this.countryCodeStyle,
+    required this.codeChipPadding,
     required this.strutStyle,
     required this.textAlign,
     required this.textAlignVertical,
